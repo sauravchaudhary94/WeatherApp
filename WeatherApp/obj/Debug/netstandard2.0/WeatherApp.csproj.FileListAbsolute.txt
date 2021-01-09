@@ -1,0 +1,15 @@
+/Users/663950/Projects/WeatherApp/WeatherApp/bin/Debug/netstandard2.0/WeatherApp.deps.json
+/Users/663950/Projects/WeatherApp/WeatherApp/bin/Debug/netstandard2.0/WeatherApp.dll
+/Users/663950/Projects/WeatherApp/WeatherApp/bin/Debug/netstandard2.0/ref/WeatherApp.dll
+/Users/663950/Projects/WeatherApp/WeatherApp/bin/Debug/netstandard2.0/WeatherApp.pdb
+/Users/663950/Projects/WeatherApp/WeatherApp/obj/Debug/netstandard2.0/WeatherApp.csprojAssemblyReference.cache
+/Users/663950/Projects/WeatherApp/WeatherApp/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/663950/Projects/WeatherApp/WeatherApp/obj/Debug/netstandard2.0/Views/FavoritePage.xaml.g.cs
+/Users/663950/Projects/WeatherApp/WeatherApp/obj/Debug/netstandard2.0/Views/WeatherPage.xaml.g.cs
+/Users/663950/Projects/WeatherApp/WeatherApp/obj/Debug/netstandard2.0/WeatherApp.AssemblyInfoInputs.cache
+/Users/663950/Projects/WeatherApp/WeatherApp/obj/Debug/netstandard2.0/WeatherApp.AssemblyInfo.cs
+/Users/663950/Projects/WeatherApp/WeatherApp/obj/Debug/netstandard2.0/WeatherApp.csproj.CoreCompileInputs.cache
+/Users/663950/Projects/WeatherApp/WeatherApp/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/663950/Projects/WeatherApp/WeatherApp/obj/Debug/netstandard2.0/WeatherApp.dll
+/Users/663950/Projects/WeatherApp/WeatherApp/obj/Debug/netstandard2.0/ref/WeatherApp.dll
+/Users/663950/Projects/WeatherApp/WeatherApp/obj/Debug/netstandard2.0/WeatherApp.pdb

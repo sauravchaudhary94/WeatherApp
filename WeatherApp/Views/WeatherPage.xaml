@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeatherApp.Views.WeatherPage"
+             BackgroundColor="AliceBlue"
+             x:Name="MainPageReference">
+    <ContentPage.Content>
+
+       <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+          
+           <SearchBar x:Name="SearchEntry" Placeholder="Search..." Grid.Row="0" Grid.RowSpan="2" Margin="15,5,15,10"                         
+                          Focused="Handle_Focused" 
+                          Unfocused="Handle_Unfocused" VerticalOptions="Center"
+                          SearchCommand="{Binding SearchClicked}"
+                          SearchCommandParameter="{Binding Text, Source={x:Reference SearchEntry}}"
+                          Text="{Binding SearchText}">
+           </SearchBar>
+
+        <ActivityIndicator IsRunning="{Binding IsProgressBarVisible}" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" Grid.RowSpan="2" Margin="15,5,15,10" Color="DimGray"/>
+
+        <ListView ItemsSource="{Binding weatherListModel}" IsVisible="{Binding IsListVisible}"
+          HasUnevenRows="true"
+          Grid.Row="1" Margin="15,75,15,15">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame Padding="0"
+                               Margin="5"
+                               BorderColor="Transparent"
+                               BackgroundColor="White"
+                               CornerRadius="10">
+                            <Grid ColumnSpacing="5" RowSpacing="5" Padding="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label Text="{Binding MaxTemp}"
+                                       TextColor="Black"
+                                       FontFamily="OpenSans-Light"
+                                       FontSize="15"
+                                       HorizontalOptions="FillAndExpand"
+                                       VerticalOptions="End"
+                                       Grid.Column="0"
+                                       Grid.Row="0"
+                                       Grid.ColumnSpan="2"
+                                       Margin="10,10,20,0" />
+
+                                <Label Grid.Column="0"
+                                       Grid.Row="1"
+                                       Grid.ColumnSpan="2"
+                                       TextColor="Black"
+                                       FontFamily="OpenSans-Light"
+                                       Text="{Binding MinTemp}"
+                                       FontSize="15"
+                                       HorizontalOptions="StartAndExpand"
+                                       Margin="10,10,20,0" />
+                                <Label Grid.Column="0"
+                                       Grid.Row="2"
+                                       Grid.ColumnSpan="2"
+                                       TextColor="Black"
+                                       FontFamily="OpenSans-Light"
+                                       Text="{Binding Temperature}"
+                                       FontSize="15"
+                                       HorizontalOptions="StartAndExpand"
+                                       Margin="10,10,20,0" />
+
+
+                                <Button Text="ADD"
+                                        VerticalOptions="End"
+                                        HorizontalOptions="Start"
+                                        Grid.Row="3"
+                                        Grid.Column="0"
+                                        Command="{Binding Source={x:Reference MainPageReference}, Path=BindingContext.AddClicked}"
+                                        Margin="5,0,5,10" />
+                                <Button Text="VIEW"
+                                        VerticalOptions="End"
+                                        HorizontalOptions="Start"
+                                        Grid.Row="3"
+                                        Grid.Column="1"
+                                        Command="{Binding Source={x:Reference MainPageReference}, Path=BindingContext.ViewClicked}"
+                                        Margin="0,0,0,10" />
+
+
+                                <BoxView VerticalOptions="Fill"
+                                         HorizontalOptions="End"
+                                         WidthRequest="1"
+                                         Color="LightPink"
+                                         Margin="0"
+                                         Grid.Row="0"
+                                         Grid.Column="2"
+                                         Grid.RowSpan="4" />
+
+
+                                <Image HeightRequest="35"
+                                       WidthRequest="55"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="End"
+                                       Source="{Binding ImageUrl}"
+                                       Grid.Column="3"
+                                       Grid.Row="0"
+                                       Grid.RowSpan="4"
+                                       Margin="10"/>
+
+                            </Grid>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+         
+       </Grid>
+
+ </ContentPage.Content>
+</ContentPage>

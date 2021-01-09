@@ -1,0 +1,48 @@
+﻿<Properties StartupConfiguration="{F1E42F2C-4786-4223-A4C6-BC5DA8E1F350}|Default">
+  <MonoDevelop.Ide.ItemProperties.WeatherApp.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" TriggeredFromHotReload="False" PreferredExecutionTarget="Android.S6L3Y18529013519" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="WeatherAppTest/MockForms.cs">
+    <Files>
+      <File FileName="WeatherAppTest/ViewModelTest/WeatherViewModelTest.cs" Line="71" Column="65" />
+      <File FileName="WeatherApp/ViewModels/WeatherViewModel.cs" Line="53" Column="41" />
+      <File FileName="WeatherApp/ViewModels/FavoriteListViewModel.cs" Line="1" Column="1" />
+      <File FileName="WeatherApp/ViewModels/BaseViewModel.cs" Line="1" Column="1" />
+      <File FileName="WeatherApp/Interface/IWeatherDetails.cs" Line="1" Column="1" />
+      <File FileName="WeatherApp/Interface/IConfigurationManager.cs" Line="1" Column="1" />
+      <File FileName="WeatherApp/Config/WeatherAPI.json" Line="1" Column="1" />
+      <File FileName="WeatherApp/Config/ConfigurationManager.cs" Line="2" Column="14" />
+      <File FileName="WeatherApp/Config/AppConfig.cs" Line="1" Column="1" />
+      <File FileName="WeatherAppTest/ModelTest/FavoriteListModelTest.cs" Line="1" Column="1" />
+      <File FileName="WeatherAppTest/ModelTest/WeatherListModelTest.cs" Line="1" Column="1" />
+      <File FileName="WeatherAppTest/ModelTest/WeatherModelTest.cs" Line="1" Column="1" />
+      <File FileName="WeatherAppTest/MockConfigurationManager.cs" Line="1" Column="1" />
+      <File FileName="WeatherAppTest/MockForms.cs" Line="237" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WeatherApp" expanded="True">
+            <Node name="WeatherApp.iOS" expanded="True" />
+            <Node name="WeatherAppTest" expanded="True">
+              <Node name="MockForms.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="WeatherApp" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>WeatherTest/WeatherTest.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.WeatherApp.iOS automaticSigning="False" TriggeredFromHotReload="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.B15703D7-211B-4231-9AA0-900109A5A8CE" />
+</Properties>

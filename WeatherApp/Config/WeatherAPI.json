@@ -1,0 +1,5 @@
+﻿{
+  "ApiKey": "cf7328517fa162a834d0aea082f05bb0",
+  "WeatherUrlByCity": "https://api.openweathermap.org/data/2.5/weather?q={0}&appid={1}&units=metric",
+  "WeatherUrlByZip": "https://api.openweathermap.org/data/2.5/weather?zip={0}&appid={1}&units=metric"
+}
